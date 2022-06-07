@@ -1,0 +1,41 @@
+body{
+    background-color: #0f394b;
+}
+
+.container{
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: #2b8ab2;
+    font-size: 30px;
+    /* color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box.buzz{
+    background-color: bisque;
+}
+
+.box.fizz{
+    background-color: lightgreen;
+}
+
+.box.buzzfizz{
+    background-color: rgb(212, 61, 136);
+}
