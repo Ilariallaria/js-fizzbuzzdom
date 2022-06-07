@@ -12,15 +12,21 @@ const container = document.querySelector('.container');
 
 for( let i =1; i<=100; i++){
     let numberType;
+    let numberOrText;
     if(i %3 ===0 && i % 5===0){
         numberType = 'buzzfizz';
+        numberOrText = 'buzzfizz'
     }
     else if(i % 3 ===0){
         numberType = 'fizz';
+        numberOrText = 'fizz'
+
     }
     else if(i % 5===0){
         numberType = 'buzz'
+        numberOrText = 'buzz'
+
     }
-    const colorBox = `<div class="box ${numberType}">${i}</div>`;
+    const colorBox = `<div class="box ${numberType}">${numberOrText|| i }</div>`;
     container.innerHTML+= colorBox;
 }
